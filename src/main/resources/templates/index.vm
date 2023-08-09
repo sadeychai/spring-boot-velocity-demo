@@ -1,0 +1,7 @@
+##set($layout = "/layout/default.vm")
+<ul>
+  <li>${message}</li>
+  <li>${name}</li>
+  <li>${age}</li>
+  <li>${date.getSystemTime()}</li>
+</ul>

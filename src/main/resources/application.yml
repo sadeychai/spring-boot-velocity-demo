@@ -1,0 +1,13 @@
+spring:
+    velocity:
+        cache: false
+        charset: UTF-8
+        check-template-location: true
+        enabled: true
+        resource-loader-path: classpath:/templates/
+        suffix: .vm
+        toolbox-config-location: /velocity/toolbox.xml
+        #下面三个是为了支持layout添加的自定义属性
+        layout-view-resolver: true
+        layout-url: /layout/default.vm
+        screen-content-key: content

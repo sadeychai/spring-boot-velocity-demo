@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    #parse("/common/header.vm")
+</head>
+
+<body>
+    #parse("/common/nav.vm")
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    #parse("/common/sidebar.vm")
+    <!-- sidebar end -->
+    <!-- content start -->
+    <!--content对映spring.velocity.screen-content-key的配置值-->
+    ${content}
+    <!-- content end -->
+</div>
+<a href="#" class="am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}">
+    <span class="am-icon-btn am-icon-th-list"></span>
+</a>
+    #parse("/common/footer.vm")
+</body>
+
+</html>
